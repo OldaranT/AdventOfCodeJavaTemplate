@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://checkstyle.sourceforge.net/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <!-- Suppressions for unit testing code -->
+    <suppress checks="MethodName"
+              files="[/\\]test"
+              id="MethodNameMain"
+    />
+    <suppress checks="MethodName"
+              files="[/\\]main"
+              id="MethodNameTest"
+    />
+    <suppress checks="MagicNumber"
+              files="[/\\]test"
+    />
+    <suppress checks="JavadocMethod"
+              files="[/\\]test"
+    />
+    <suppress checks="JavadocVariable"
+              files="[/\\]test"
+    />
+    <suppress checks="JavadocType"
+              files="[/\\]test"
+    />
+
+    <!--<suppress message="Missing a Javadoc comment"/>-->
+</suppressions>

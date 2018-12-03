@@ -1,0 +1,14 @@
+<FindBugsFilter>
+    <Match>
+        <Class name="~.*\.EJS.*|.*\._.*"/>
+    </Match>
+    <!-- Do not complain about getters returning mutable objects -->
+    <Match>
+        <Or>
+            <Bug pattern="EI_EXPOSE_REP"/>
+            <Bug pattern="EI_EXPOSE_REP2"/>
+            <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD"/>
+            <Bug pattern="IS2_INCONSISTENT_SYNC"/>
+        </Or>
+    </Match>
+</FindBugsFilter>
